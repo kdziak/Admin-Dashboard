@@ -1,50 +1,27 @@
-.gridcontainer {
+
+.maingrid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: minmax(200px, 300px) 2fr;
+  grid-template-rows: minmax(150px, 300px) 1fr;
 }
 
 .sidebar {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  background-color: blue;
+  grid-column: 1 / 2;
+  grid-row: 1  /  span 3;
   display: grid;
-}
-
-.linkholder {
-  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 a {
   text-decoration: none;
-}
-
-.header {
-  display: grid;
-  grid: 1fr 1fr / 2fr 1fr;
+  color: red;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "cardholder annoucements"
-  "cardholder annoucements"
-  "cardholder trending";
-}
+  grid-column: 2 / span 2;
+  grid-row: 2 / 3;
+  background-color: red;
+  
 
-.cardholder {
-  display: grid;
-  grid: 1fr 1fr/ 1fr  1fr;
-  grid-area: cardholder;
-}
-
-.annoucements {
-  grid-area: annoucements;
-}
-
-.trending {
-  grid-area: trending;
 }
