@@ -1,27 +1,128 @@
+/* HTML level style*/
 
-.maingrid {
-  display: grid;
-  grid-template-columns: minmax(200px, 300px) 2fr;
-  grid-template-rows: minmax(150px, 300px) 1fr;
-}
 
-.sidebar {
-  background-color: blue;
-  grid-column: 1 / 2;
-  grid-row: 1  /  span 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: red;
+  color: white;
+  font-size: 20px;
 }
+
+svg {
+  color: white;
+}
+
+
+
+
+.maingrid {
+  display: grid;
+  grid-template: 180px 1fr / 250px 1fr;
+  height: 100vh;
+  
+}
+
+/* sidebar area */ 
+
+.sidebar {
+  background-color: rgb(96, 96, 189);
+  height: 100vh;
+  padding: 5px;
+  align-items: center;
+}
+
+.Dash {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.links-logos {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 100px repeat(5, 50px) 100px repeat(3, 50px);
+  height: 55vh;
+  margin-left: 20px;
+  margin-top: 50px;
+  text-align: start;
+  text-justify: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Main area */
 
 .main {
   grid-column: 2 / span 2;
   grid-row: 2 / 3;
   background-color: red;
-  
+  display: grid;
+  grid-template: 10% 90%/ 60% 40%
 
 }
+
+.rightmain {
+  grid-column: 2 / 3;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.leftmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .1fr 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.project-cards {
+  grid-area: 2 / 1 ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+/* header area */
+
+.headerstuff {
+  display: grid;
+  grid-template: 100px 1fr / 1fr 1fr;
+}
+
+
+.searcharea{
+  display: grid;
+  grid-template-columns: 2em 1fr;
+}
+
+#query {
+  width: 400px;
+}
+
+.user{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.Greeting {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+button {
+  border-radius: 10px;
+}
+
+
+
