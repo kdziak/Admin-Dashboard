@@ -14,7 +14,7 @@ a {
 }
 
 svg {
-  color: white;
+  color: black;
 }
 
 
@@ -66,8 +66,11 @@ svg {
   grid-row: 2 / 3;
   background-color: rgb(226, 226, 226);
   display: grid;
-  grid-template: 50px 1fr/ 2fr 1fr;
-  
+  grid-template: 50px 1fr/ 2fr 1fr; 
+}
+
+.main-project-title {
+  font-weight: bold;
 }
 
 .main-project-title,
@@ -77,19 +80,70 @@ svg {
   margin-left: 20px;
 }
 
+.Trending {
+  margin-left: 20px;
+}
+
 .project-cards {
   display: grid;
   grid-template: auto / 1fr 1fr;
-  
+  margin-top: 10px;
   gap: 10px;
 }
 
 .card {
-  background-color: blue;
+  background-color: white;
+  text-align: start;
+  margin-left: 15px;
+  box-shadow: inset 5px 0px 0px gold, 2px 2px 5px rgb(177, 173, 173);
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+.first-line {
+  font-weight: bold;
+}
+
+.first-line,
+p {
+  margin-left: 10px;
+}
+
+p {
+  font-weight: lighter;
+}
+
+.svg-holder {
+  margin-left: 100px;
 }
 
 
 
+.Annoucement-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: white;
+  margin: 10px;
+}
+
+
+.Trending-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: white;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 2em 1fr;
+}
+
+.annoucement-text {
+  border-bottom: 2px solid black;
+}
 /* header area */
 
 .header {
@@ -99,9 +153,13 @@ svg {
 
 .headerstuff {
   display: grid;
-  grid-template: 100px 1fr / 1fr 1fr;
+  grid-template: auto auto / 1fr 1fr;
 }
 
+.headergrid {
+  padding-top: 20px;
+  padding-left: 20px;
+}
 
 .searcharea{
   display: grid;
@@ -110,11 +168,17 @@ svg {
 
 #query {
   width: 400px;
+  border-radius: 15px;
+  background-color: rgb(226, 226, 226);
+  border: none;
+  
 }
+
 
 .user{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 3em 3em 3em;
+  padding-left: 100px;
 }
 
 .Greeting {
@@ -123,8 +187,22 @@ svg {
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 20px;
+  background-color: rgb(96, 96, 189);
+  border: none;
+  padding: 14px 14px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  
+  
 }
 
+.navbuttons {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
 
+}
 
